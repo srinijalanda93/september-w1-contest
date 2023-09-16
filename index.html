@@ -6,10 +6,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!---giving the name of favourite city-->
-    <!-- Header:
-Explanation: This section should introduce the city's name and a captivating solgan.
-Hints: Consider using the header h1 and p tags. -->
     <header>
       <h1>Seoul</h1>
       <p>
@@ -19,40 +15,142 @@ Hints: Consider using the header h1 and p tags. -->
         palaces and street markets.
       </p>
     </header>
-    <!-- Navigation Menu:
-Explanation: A series of links to guide users to different sections of the page.
-Hints: The nav tag is ideal here, combined with the a> tags for links. -->
+    <!--nav bar-->
     <nav>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="#introcity">About Seoul</a>
+      <a href="#Attraction"> Attractions</a>
+      <a href="#Statistics"> City Statistics</a>
+      <a href="#feedback"> Feedback</a>
+      <a href="#quotes"> Quotes</a>
+      <a href="#Contact"> Contact</a>
     </nav>
     <main>
-      <!-- City Description:
-Explanation: A brief introduction to the city, accompanied by a picturesque image.
-Hints: Use the section, h2 ,img and p tags. -->
-      <h2>Now it is all About Seoul</h2>
-      <h3>Trending Music Band Company</h3>
-      >
-      <img
-        src="https://images.unsplash.com/photo-1540483761890-a1f7be05d99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a29yZWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
-        alt="seoul_pic"
-        height="500px"
-      />
-      <p>
-        Seoul famous for the amazing temples,famous beauty brands,Electronics
-        like samsung. and also having large Comapnies holding the amazing music
-        band Like BTS etc .The history of the city of Seoul dates back
-        approximately 2,000 years, to when Wiryeseong, the capital of Baekje,
-        was located on the banks of the Hangang River in the southeastern part
-        of what is now Seoul. Development of the city began in earnest once it
-        was appointed the capital of the Joseon Dynasty (1392 - 1910)
-      </p>
-      
+     <!--description-->
+      <section id="introcity">
+        <h2>Now it is all About Seoul</h2>
+        <h3>Trending Music Band Company</h3>
+        <img
+          src="https://images.unsplash.com/photo-1540483761890-a1f7be05d99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a29yZWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+          alt="seoul_pic"
+          height="500px"
+        />
+        <p>
+          The history of the city of Seoul dates back approximately 2,000 years,
+          to when Wiryeseong, the capital of Baekje, was located on the banks of
+          the Hangang River in the southeastern part of what is now Seoul.
+          Development of the city began in earnest once it was appointed the
+          capital of the Joseon Dynasty (1392 - 1910)
+        </p>
+      </section>
+     <!--Attraction section info-->
+      <section id="Attraction">
+        <h2>Main Attraction</h2>
+        <ol>
+          <li>Gyeongbokgung Palace</li>
+          <li>N Seoul Tower</li>
+          <li>Bukchon Hanok Village</li>
+          <li>Cheonggyecheon</li>
+        </ol>
+        <ul type="round">
+          <li>Itaewon</li>
+          <li>Seoul National University</li>
+          <li><h3>Hybe building</h3></li>
+          <ul>
+            <li>BTS</li>
+            <li>TXT</li>
+            <li>GOT7</li>
+            <li>SEVENTEEN</li>
+            <li>BLACKPINK</li>
+          </ul>
+        </ul>
+      </section>
+      <!--statistics section info-->
+      <section id="Statistics">
+        <table border="1">
+          <caption>
+            <h1>City Statistics</h1>
+          </caption>
+          <thead>
+            <tr>
+              <th>Attributes</th>
+              <th>Values</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Population</td>
+              <td>9 Millions</td>
+            </tr>
+            <tr>
+              <td>Trourits</td>
+              <td>1 Millions</td>
+            </tr>
+            <tr>
+              <td>World Rank</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>Sport</td>
+              <td>Football</td>
+            </tr>
+            <tr>
+              <td>temples</td>
+              <td>128</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--feedback section info-->
+      <section id="feedback">
+        <h1>Feedback</h1>
+        <form>
+          <label for="uname">Name:</label>
+          <input type="text" name="_name" id="uname" required /><br />
+          <label for="age">Age:</label>
+          <input type="Number" name="_age" id="age" required /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="_mail" id="email" required /><br />
+          <label>Favourite Attraction</label>
+          <select>
+            <option value="Cheonggyecheon">Cheonggyecheon</option>
+            <option value="N_Seoul_Tower">N Seoul Tower</option>
+            <option value="Gyeongbokgung_Palace">Gyeongbokgung Palace</option>
+            <option value="Itaewon">Itaewon</option>
+            <option value="Han_River">Han River</option>
+            <option value="all">all</option></select
+          ><br />
+          <label for="comment">Comment:</label>
+          <textarea rows="4" cols="23" id="comment"> </textarea><br />
+          <label for="newsss">Newletter:</label>
+          <input type="checkbox" id="subcribe" />
+          <label for="subcribe">Subscribe Our Newsletter </label><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <!--citizen section info-->
+<section id="quotes">
+  <h1>What Citizens say</h1>
+  <p>
+    <blockquote>"Amazing universities of all time <span style="color: red;">Dedicated people</span> You can meet here " -Alex</blockquote>
+    <blockquote>"Best countryto capture the culture and traditional <span style="color: blueviolet;font-weight:bold;">delicious Kimichi</span> " -Brookie</blockquote>
+  </p>
+  
+</section>
+<section id="Contact">
+  <!--contact section info-->
+<h1>Contact Us</h1>
+<p>
+  <i>Address<br>
+    1 Gwanak-ro, Gwanak-gu, Seoul, South Korea
+    Email:<a href="https://gmail.com/">informStudent@gmail.com</a>
+    Phone Number:+82 2-880-5114
+  </i>
+</p>
+</section>
     </main>
-    <footer></footer>
+    <!--final footer info-->
+    <footer>
+      <p>&copy; 2023 By Student printer Srinija Landa seoul University</p>
+    </footer>
   </body>
 </html>
